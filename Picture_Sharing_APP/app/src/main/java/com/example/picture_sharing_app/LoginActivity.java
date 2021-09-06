@@ -5,6 +5,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.Menu;
@@ -28,8 +29,8 @@ public class LoginActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
         final ImageView ivPwdSwitch = findViewById(R.id.iv_pwd_switch);
         etPwd = findViewById(R.id.et_pwd);
-        etAccount=findViewById(R.id.et_account);
-        Button btLogin=findViewById(R.id.bt_login);
+        etAccount = findViewById(R.id.et_account);
+        Button btLogin = findViewById(R.id.bt_login);
         ivPwdSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_gotoregister:
-                        Intent i=new Intent(LoginActivity.this,RegisterActivity.class);
+                        Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
                         startActivity(i);
                         break;
                 }

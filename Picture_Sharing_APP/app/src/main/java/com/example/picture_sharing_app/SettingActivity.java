@@ -16,9 +16,9 @@ public class SettingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_setting);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.setting_toolbar);
         setSupportActionBar(myToolbar);
-        Button btExit=findViewById(R.id.bt_exit);
-        Button btClear=findViewById(R.id.bt_clear);
-        Button btAbout=findViewById(R.id.bt_exit);
+        Button btExit = findViewById(R.id.bt_exit);
+        Button btClear = findViewById(R.id.bt_clear);
+        Button btAbout = findViewById(R.id.bt_exit);
         myToolbar.setNavigationOnClickListener(new View.OnClickListener() {  //返回按钮点击事件
             @Override
             public void onClick(View v) {
